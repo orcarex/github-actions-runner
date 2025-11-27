@@ -8,8 +8,8 @@ services:
     container_name: github-runner-1
     environment:
       RUNNER_TOKEN: $RUNNER_TOKEN
-      RUNNER_NAME: runner-01
-      RUNNER_LABELS: "docker,X64,runner-01,self-hosted,Linux"
+      RUNNER_NAME: $RUNNER_NAME
+      RUNNER_LABELS: $RUNNER_LABELS
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock  # allow use Docker inside the runner
       - runner-work:/home/runner/_work
