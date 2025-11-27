@@ -1,3 +1,5 @@
+[English](README.md) · **中文 (繁體)**
+
 # GitHub Actions Self-Hosted Runner (Docker)
 
 簡短說明
