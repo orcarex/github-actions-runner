@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  github-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: github-runner-1
+    environment:
+      RUNNER_TOKEN: $RUNNER_TOKEN
+      RUNNER_NAME: runner-01
+      RUNNER_LABELS: "docker,X64,runner-01,self-hosted,Linux"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # 允许容器内使用 Docker
+      - runner-work:/home/runner/_work
+    restart: unless-stopped
+    networks:
+      - github-runner-network
+
+volumes:
+  runner-work:
+
+networks:
+  github-runner-network:
+    driver: bridge
