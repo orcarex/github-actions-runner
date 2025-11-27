@@ -95,11 +95,11 @@ chmod +x test.sh
 
 ```yaml
 jobs:
-	build:
-		runs-on: [self-hosted, docker, X64]
-		steps:
-			- uses: actions/checkout@v4
-			- run: echo "Running on self-hosted runner"
+  build:
+    runs-on: [self-hosted, docker, X64]
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Running on self-hosted runner"
 ```
 
 常見問題（FAQ）
