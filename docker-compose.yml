@@ -11,7 +11,7 @@ services:
       RUNNER_NAME: runner-01
       RUNNER_LABELS: "docker,X64,runner-01,self-hosted,Linux"
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock  # 允许容器内使用 Docker
+      - /var/run/docker.sock:/var/run/docker.sock  # allow use Docker inside the runner
       - runner-work:/home/runner/_work
     restart: unless-stopped
     networks:

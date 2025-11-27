@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# 自动导出 .env 中的所有变量
+# auto export all variables from .env
 set -a
 source .env
 set +a
 
+# check if already configured
 echo "RUNNER_TOKEN: $RUNNER_TOKEN"
 echo "RUNNER_NAME: $RUNNER_NAME"

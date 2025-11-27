@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# 自动导出 .env 中的所有变量
+# auto export all variables from .env
 set -a
 source .env
 set +a
 
-# 检查是否已配置
+# check if already configured
 if [ ! -f ".runner" ]; then
   echo "Configuring runner..."
   ./config.sh \
