@@ -1,4 +1,4 @@
-# [English](README.md) · [中文 (繁體)](README.zh-TW.md)
+**English** · [中文 (繁體)](README.zh-TW.md)
 
 # GitHub Actions Self-Hosted Runner (Docker)
 
