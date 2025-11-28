@@ -17,7 +17,7 @@ Repository Contents
 - `docker-compose.yml` - Example service definition (`github-runner`).
 - `entrypoint.sh` - Entrypoint script that registers and starts the runner when the container starts.
 - `.env` - (not tracked) Recommended place for runtime environment variables such as `RUNNER_TOKEN`.
-- `test.sh` - Small helper script to print environment variables for quick verification.
+- `check-env.sh` - Small helper script to print environment variables for quick verification.
 
 Quickstart
 ----------

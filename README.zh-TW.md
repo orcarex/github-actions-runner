@@ -17,7 +17,7 @@
 - `docker-compose.yml` - 範例服務設定 (服務名稱 `github-runner`)
 - `entrypoint.sh` - container 啟動時用來註冊與啟動 runner 的腳本
 - `.env` - (未追蹤) 建議放置必要的環境變數，例如 `RUNNER_TOKEN`
-- `test.sh` - 簡單的本地檢查腳本，用來印出 env 變數（方便測試）
+- `check-env.sh` - 簡單的本地檢查腳本，用來印出 env 變數（方便測試）
 
 快速開始
 -----------------
